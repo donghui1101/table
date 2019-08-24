@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+      $(function(){
+        $.each( $('table:first tbody tr'),function(i,tr){
+           $(this).click(function(){
+                 var tr = $(this).clone();
+                  console.log(this);
+                  $(tr).insertAfter($(this));  
+           })
+            //    currentRow.after(str);
+           })
+      })
+    
+</script>
+</HEAD>
+
+<BODY>
+   <table  class="table" >
+       <thead>
+           
+           <tr>
+               <th>id</th>
+               <th>value</th>
+               <th>button</th>
+           </tr>
+       </thead>
+       <tbody>
+           <!-- 这里是input的id和tr的id要一样 -->
+           <tr class="tr">
+                <td>1</td>
+               <td>0</td>
+               <td>row0</td>
+           </tr>
+           <tr class="tr">
+                <td>2</td>
+               <td>0</td>
+               <td>row0</td>
+           </tr>
+           <tr class="tr">
+                <td>3</td>
+               <td>0</td>
+               <td>row0</td>
+           </tr>
+       </tbody>
+   </table>
+</BODY>
+</HTML>
